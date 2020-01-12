@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "rock-your-day-soundboard",
+  "version": "1.0.0",
+  "description": "Soundboard to Rock your day!",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "Otto Siikasmaa",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
