@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to Cloudflare Workers with Wrangler
+      uses: cloudflare/wrangler-action@1.1.0
+      with:
+        # Your Cloudflare API Token
+        apiToken: ${{ secrets.CF_TOKEN }}
