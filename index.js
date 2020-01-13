@@ -129,7 +129,7 @@ const html = `<!DOCTYPE html>
     const App = () => {
       const sounds = [
         {
-          title: 'Rock your day!!!!',
+          title: 'Rock your day!',
           audio: new Audio(
             'https://storage.googleapis.com/sounds-storage/immonen/rock%20your%20day.mp3',
           ),
@@ -176,6 +176,30 @@ const html = `<!DOCTYPE html>
             'https://storage.googleapis.com/sounds-storage/immonen/you%20need%20to.mp3',
           ),
         },
+        {
+          title: 'Tädää',
+          audio: new Audio(
+            'https://storage.googleapis.com/sounds-storage/immonen/tadaa.mp3',
+          ),
+        },
+        {
+          title: 'This is your day',
+          audio: new Audio(
+            'https://storage.googleapis.com/sounds-storage/immonen/this%20is%20your%20day.mp3',
+          ),
+        },
+        {
+          title: 'Remember',
+          audio: new Audio(
+            'https://storage.googleapis.com/sounds-storage/immonen/remember.mp3',
+          ),
+        },
+        {
+          title: 'Attitude',
+          audio: new Audio(
+            'https://storage.googleapis.com/sounds-storage/immonen/attitude.mp3',
+          ),
+        },
       ]
 
       return (
@@ -191,7 +215,7 @@ const html = `<!DOCTYPE html>
               className="image"
               onClick={() => sounds[0].audio.play()}
               src="https://storage.googleapis.com/sounds-storage/immonen/janne_immonen.png"
-              alt="Janne Immonen"
+              alt="Rock your day!!!"
             />
           </div>
         </div>
