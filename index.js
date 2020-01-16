@@ -17,6 +17,11 @@ const html = `<!DOCTYPE html>
 <html>
   <head>
     <title>Rock your day! Soundboard</title>
+    <meta
+      name="description"
+      content="Tsädää! Soundboard with attitude!! Rock your day!!!!"
+    />
+    <meta name="keywords" content="rock, your, day, rockyourday, soundboard, rockyourdaysoundboard, motivation, attitude" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
