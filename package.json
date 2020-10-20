@@ -1,15 +1,49 @@
 {
-  "private": true,
   "name": "rock-your-day-soundboard",
   "version": "1.0.0",
+  "private": true,
   "description": "Soundboard to Rock your day!",
-  "main": "index.js",
-  "scripts": {
-    "format": "prettier --write '**/*.{js,css,json,md}'"
-  },
   "author": "Otto Siikasmaa",
-  "license": "MIT",
+  "license": "no-license",
+  "scripts": {
+    "start": "NODE_ENV=development yarn build:front && wrangler dev",
+    "build": "yarn build:api && yarn build:front",
+    "build:api": "webpack",
+    "format": "prettier --write '**/*.{js,css,json,md}'",
+    "build:front": "webpack --config frontend.webpack.config.js",
+    "deploy": "NODE_ENV=production yarn build:front && wrangler publish"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "Safari >= 9",
+    "last 1 Samsung versions",
+    "IE 11",
+    "last 2 firefox versions",
+    "last 2 ChromeAndroid versions",
+    "last 1 Edge versions",
+    "last 2 iOS versions"
+  ],
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@cloudflare/kv-asset-handler": "^0.0.12",
+    "@cloudflare/workers-types": "^2.0.0",
+    "@types/classnames": "^2.2.10",
+    "@types/react-dom": "^16.9.8",
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.1.1",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.1.2",
+    "sass-loader": "^10.0.3",
+    "source-map-loader": "^1.1.1",
+    "source-map-support": "^0.5.19",
+    "ts-loader": "^8.0.6",
+    "typescript": "^4.0.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.1.0"
   }
 }

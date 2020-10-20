@@ -1,6 +1,11 @@
+name = "rockyourdaysoundboard"
+type = "webpack"
 account_id = "376b8da32ae6fd6b4a526bcecb677a50"
 zone_id = "20640f2ac05d675531b0c7f827252ace"
-type = "javascript"
 workers_dev = false
-name = "rockyourdaysoundboard"
-route = "rockyourdaysoundboard.com"
+route = "rockyourdaysoundboard.com/*"
+webpack_config = "./webpack.config.js"
+
+[site]
+bucket = "./front-dist"
+entry-point = "./dist"

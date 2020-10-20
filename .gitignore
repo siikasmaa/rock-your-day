@@ -7,3 +7,7 @@ wasm-pack.log
 worker/
 node_modules/
 .cargo-ok
+dist/
+front-dist/
+.DS_Store
+package-lock.json

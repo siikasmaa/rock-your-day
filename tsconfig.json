@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "esnext",
+      "webworker",
+    ],
+    "alwaysStrict": true,
+    "strict": true,
+    "preserveConstEnums": true,
+    "strictPropertyInitialization": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "esModuleInterop": true
+  },
+  "types": [
+    "node",
+    "@cloudflare/workers-types"
+  ],
+  "include": [
+    "./src/*.ts",
+    "./src/**/*.ts",
+    "./node_modules/@cloudflare/workers-types/index.d.ts"
+  ],
+  "exclude": [
+    "node_modules/",
+    "dist/"
+  ]
+}

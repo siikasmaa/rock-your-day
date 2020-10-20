@@ -1,0 +1,62 @@
+body {
+  background-color: #1a1a2a;
+  background-size: auto;
+  background-position: center;
+  z-index: 0;
+  background-image: radial-gradient(circle, transparent 0%, #0a0b13 75%),
+    url(https://storage.googleapis.com/sounds-storage/immonen/noise.png);
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center;
+  color: white;
+}
+
+.card {
+  user-select: none;
+  height: 20vh;
+  opacity: 0.9;
+
+  &:has(audio:active) {
+    background: yellow;
+
+    & > h1 {
+      color: white;
+    }
+  }
+}
+
+.soundboard {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.image-container {
+  margin-top: 227px;
+}
+
+.image {
+  transform: rotateZ(-15deg);
+  position: fixed;
+  bottom: -297px;
+}
+
+@media only screen and (max-width: 600px) {
+  .soundboard {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .card {
+    height: 26vh;
+  }
+
+  .display-3 {
+    font-size: 3.5rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+}
